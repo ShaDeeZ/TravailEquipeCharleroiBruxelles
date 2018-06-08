@@ -23,12 +23,9 @@
   width: 100%;
 }
 .button{
-  margin-top: 500px;
+  margin-top: 20vh;
 }
-.product{
-  height: 450px;
-  text-align: center;
-}
+
 .location{
   height: 700px;
   text-align: center;
@@ -37,22 +34,22 @@
   margin: 20px 10vw;
 }
 .display{
-  width: 65%;
   margin-top: 90px;
-  margin: auto;
   display: flex;
-  justify-content: space-around;
+    flex-wrap: wrap;
   color: grey;
   text-align: center;
+    justify-content: center;
 }
 .display p{
-  width: 40%;
+    max-width: 45%;
   text-align: justify;
-  margin-left: 10vw;
+  margin-left: 3vw;
   font-size: 1.2em;
 }
 .display img{
-  width: 50%;
+ max-width: 400px;
+ box-shadow: 5px 5px #DEDEDE;
 }
 .card-title{
   margin: 50px;
@@ -71,6 +68,7 @@
 }
 h5{
   margin: 2px;
+ float:none;
 }
 
 #img_navbar {
@@ -204,4 +202,32 @@ h5{
     -webkit-transform: translateY(-100px);
             transform: translateY(-100px);
   }
+    
+}
+
+@media screen and (min-width: 200px) and (max-width: 740px) {
+    
+    .display p{ max-width: 95%;
+                margin:2.5% 2.5%;	 
+}
+    .display img{
+	            max-width: 95%;
+                margin:2.5% 2.5%; 
+}
+    .icon_RS{font-size: 40%;
+        }
+    
+    .social{display: flex;
+            align-items: center;}
+    #contenu_contact input{
+	width:96%;
+}
+      #contenu_contact textarea{
+	width:96%;
+}
+      #contenu_contact button{
+	width:90%;
+    margin-bottom: 40px;
+}
+    
 }
